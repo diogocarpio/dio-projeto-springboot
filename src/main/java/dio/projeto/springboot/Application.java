@@ -50,15 +50,11 @@ public class Application {
 	 * 					principais interfaces -> CrudRepository, JPARepository, PagingAndSortingRepository
 	 * 					principais anotações -> @Query, @Param
 	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
+	 * JPA Repository : O repositório seria uma classe para buscar informações no banco de dados ou no local onde as informações
+	 * 					foram persistidas. Mas no caso do JpaRepository ele provê a ligação a determinada classe do Model com possibilidade
+	 * 					de persistir no banco de dados.
+	 * 					Principais métodos que ja são disponibilizados no framework: save, findById, existesById, findAll, delete, count.
+	 * 					O Spring Data JPA se encarrega de realizar a implementação através do padrão CRUD. 
 	 * 
 	 */
 }
