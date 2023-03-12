@@ -13,14 +13,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import dio.projeto.springboot.model.Usuario;
-import dio.projeto.springboot.repository.UsuarioRepository;
+import dio.projeto.springboot.repository.ClassRepository;
+
 
 @RestController
-@RequestMapping("/users") //Anotação que centraliza um prefixo
+@RequestMapping("/user") //Anotação que centraliza um prefixo
 public class UsuarioController {
 
 	@Autowired
-	UsuarioRepository repository;
+	ClassRepository repository;
 	
 	@GetMapping()
 	public List<Usuario> getUsers(){
